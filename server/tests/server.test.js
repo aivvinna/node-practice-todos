@@ -41,7 +41,7 @@ describe('POST /todos', () => {
       .set('x-auth', users[0].tokens[0].token)
       .send({})
       .expect(400)
-      .end((err,res) => {
+      .end((err, res) => {
         if (err) {
           return done(err);
         }
